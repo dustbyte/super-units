@@ -1,4 +1,4 @@
-# Super Units
+# Super Units ![Rust](https://github.com/mota/super-units/workflows/Rust/badge.svg)
 Handle byte units easily
 
 ## Usage
