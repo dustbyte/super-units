@@ -4,3 +4,7 @@ version = "1.0.0"
 description = "Handle byte units easily"
 authors = ["Pierre Wacrenier <pierre@wacrenier.me>"]
 edition = "2018"
+license = "MIT"
+homepage = "https://github.com/mota/super-units"
+repository = "https://github.com/mota/super-units"
+readme = "README.md"
