@@ -4,6 +4,8 @@ Handle byte units easily
 ## Usage
 
 ```
+extern crate super_units;
+
 use super_units::Amount;
 
 fn main() {
