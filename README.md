@@ -3,7 +3,7 @@ Handle byte units easily
 
 ## Usage
 
-```
+```rust
 extern crate super_units;
 
 use super_units::Amount;
