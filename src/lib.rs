@@ -59,6 +59,10 @@ impl Amount {
         let mut amount = bytes;
         let mut counter = 0;
 
+        if amount <= 0_f64 {
+            return Self::new(0_f64, Unit::Byte)
+        }
+
         while amount > 1.0 && counter < 5 {
             amount = amount / 1024.0;
             counter += 1
@@ -139,6 +143,8 @@ mod test {
 
     #[test]
     fn amount_auto_detect() {
+        assert_eq!(Amount::auto_detect(-1.0).unit, Unit::Byte);
+        assert_eq!(Amount::auto_detect(0.0).unit, Unit::Byte);
         assert_eq!(Amount::auto_detect(42.0).unit, Unit::Byte);
         assert_eq!(Amount::auto_detect(2048.0).unit, Unit::Kilo);
         assert_eq!(Amount::auto_detect(1234567.0).unit, Unit::Mega);

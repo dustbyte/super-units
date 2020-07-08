@@ -1,6 +1,6 @@
 [package]
 name = "super-units"
-version = "1.0.1"
+version = "1.0.2"
 description = "Handle byte units easily"
 authors = ["Pierre Wacrenier <pierre@wacrenier.me>"]
 edition = "2018"
